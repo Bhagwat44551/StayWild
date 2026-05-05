@@ -260,14 +260,24 @@ nav .search-btn {
 }
 
 /*  navbar  for mobile*/
-@media (max-width: 768px) {
-  .navbar-collapse .navbar-nav,
-  .navbar-collapse form,
-  .navbar-collapse .dropdown {
-    margin: 0.5rem 0 !important;
+@media (max-width: 767px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    z-index: 999;
   }
 
-  .navbar-collapse .dropdown {
-    margin-left: 0 !important;
+  .navbar-nav.ms-auto,
+  .navbar-nav.me-auto {
+    margin: 0 !important;
+  }
+
+  .dropdown {
+    margin: 0.5rem 0 !important;
   }
 }
