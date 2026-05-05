@@ -100,6 +100,11 @@ app.get("/terms", (req, res) => {
   res.render("terms");
 });
 
+//Root route
+app.get("/", (req, res) => {
+  res.redirect("/listings");
+});
+
 //Using required routes
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
