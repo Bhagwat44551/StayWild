@@ -185,6 +185,14 @@ nav .search-btn {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 0.5rem;
+}
+
+#filters::-webkit-scrollbar {
+    display: none;
 }
 
 .filter {
@@ -192,6 +200,7 @@ nav .search-btn {
     margin-right: 2rem;
     margin-top: 2rem;
     opacity: 0.7;
+    flex-shrink: 0 !important;
 }
 
 .filter:hover {
@@ -235,6 +244,7 @@ nav .search-btn {
     /* margin-top: 1rem; */
     display: flex;
     align-items: center;
+    flex-shrink: 0 !important;
 }
 
 /* flash */
@@ -247,4 +257,17 @@ nav .search-btn {
 .no-results {
     width: 30%;
     margin: 1rem auto;
+}
+
+/*  navbar  for mobile*/
+@media (max-width: 768px) {
+  .navbar-collapse .navbar-nav,
+  .navbar-collapse form,
+  .navbar-collapse .dropdown {
+    margin: 0.5rem 0 !important;
+  }
+
+  .navbar-collapse .dropdown {
+    margin-left: 0 !important;
+  }
 }
