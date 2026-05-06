@@ -2,10 +2,10 @@
 <body>
     <%- include("../includes/flash") %>
     <div class="row mt-3">
-    <div class="col-8 offset-3">
+    <div class="col-12 col-md-8 offset-md-3">
     <h3> <%= listing.title %></h3>
     </div>
-    <div class="card col-6 offset-3 show-card listing-card" >
+    <div class="card col-12 col-md-6 offset-md-3 show-card listing-card" >
         <img src="<%= listing.image.url %>" class="card-img-top show-img" alt="listing_image" />
         <div class="card-body">
         <p class="card-text">
@@ -29,7 +29,7 @@
     </div>
    <% } %>
     
-    <div class="col-8 offset-3 mb-3">
+    <div class="col-12 col-md-8 offset-md-3 mb-3">
     <% if(currUser) { %>
         <hr>
         <h4>Leave a Review</h4>
@@ -69,7 +69,7 @@
         <div class="row">
         <p><b>All Reviews</b></p>
         <% for (review of listing.reviews) { %>
-        <div class="card  col-5 ms-3 mb-3">
+        <div class="card col-12 col-md-5 ms-md-3 mb-3">
             <div class="card-body">
                 <h5 class="card-title"> <%= review.author ? review.author.username : "Unknown" %></h5>
                 <p class="starability-result" data-rating="<%= review.rating %>" > </p>
@@ -89,7 +89,7 @@
  <!-- end of card -->
 
 <!-- MAP SECTION -->
-<div class="col-6 offset-3 mt-2 mb-3">
+<div class="col-12 col-md-6 offset-md-3 mt-2 mb-3">
   <h4>Where you'll be</h4>
   <div id="map" style="width: 100%; height: 350px; border-radius: 12px;"></div>
 </div>

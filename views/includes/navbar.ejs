@@ -25,9 +25,9 @@
       <% } %>
 
       
-      <div class="navbar-nav ms-auto">
+      <!-- <div class="navbar-nav ms-auto">
         <a class="nav-link d-none d-md-block" href="/listings/new">Become a host</a>
-      </div>
+      </div> -->
      
     <div class="dropdown ms-2">
       <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
@@ -35,6 +35,10 @@
       </button>
          
       <ul class="dropdown-menu dropdown-menu-end ">
+        <li><a href="/listings/new" class="dropdown-item d-md-none">Become a host</a></li>
+        <li><hr class="dropdown-divider d-md-none"></li>
+
+
         <% if(currUser) { %>
         <li><span class="dropdown-item fw-bold"><%= currUser.username %></span>
         </li>
