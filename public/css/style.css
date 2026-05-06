@@ -287,6 +287,7 @@ nav .search-btn {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 10%;
     padding-left: 0 !important;
   }
@@ -294,7 +295,7 @@ nav .search-btn {
   .btns .btn,
   .btns form {
     width: 35;
-    
+     margin: 0 !important;
   }
   
   .btns form .btn {
