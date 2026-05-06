@@ -281,3 +281,22 @@ nav .search-btn {
     margin: 0.5rem 0 !important;
   }
 }
+
+@media (max-width: 768px) {
+  .btns {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-left: 0 !important;
+  }
+  
+  .btns .btn,
+  .btns form {
+    width: 100%;
+    margin: 0 !important;
+  }
+  
+  .btns form .btn {
+    width: 100%;
+  }
+}
