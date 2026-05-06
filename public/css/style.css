@@ -285,15 +285,16 @@ nav .search-btn {
 @media (max-width: 768px) {
   .btns {
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
     padding-left: 0 !important;
   }
   
   .btns .btn,
   .btns form {
     width: 35;
-    margin: 0 !important;
+    
   }
   
   .btns form .btn {
