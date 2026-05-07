@@ -28,7 +28,7 @@ module.exports.renderLogin = (req, res) => {
 }
 
 module.exports.login = async (req, res) => {
-    req.flash("success", "Welcome Back!");
+    req.flash("success", "Welcome Back to StayWild!");
     res.redirect(res.locals.redirectUrl || "/listings");
 }
 

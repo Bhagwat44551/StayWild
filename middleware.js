@@ -58,7 +58,7 @@ module.exports.isAuthor = async (req, res, next) => {
     let {id,reviewId} = req.params;
     let review = await Review.findById(reviewId);
     if(!review.author.equals(res.locals.currUser._id)) {
-        req.flash("error", "You didn't Create this review, You don't have permission to do that");
+        req.flash("error", "You didn't Create this review, You don't have permission to delete");
         return res.redirect(`/listings/${id}`);
     }
     next();
