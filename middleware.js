@@ -9,7 +9,7 @@ module.exports.isLoggedIn = (req, res, next) => {
         if(req.method !== "DELETE") {
             req.session.redirectUrl = req.originalUrl;
         }
-        req.flash("error","You must be logged in");
+        req.flash("error", "You must be logged in");
         return res.redirect("/login");
     }
     next();
